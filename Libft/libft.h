@@ -6,16 +6,16 @@
 /*   By: silndoj <silndoj@student.42heilbronn.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 12:39:52 by silndoj           #+#    #+#             */
-/*   Updated: 2024/03/18 14:12:28 by silndoj          ###   ########.fr       */
+/*   Updated: 2024/03/20 16:45:16 by silndoj          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdio.h>
-# include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+# include <stdlib.h>
 
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
@@ -41,6 +41,8 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		ft_atoi(const char *str);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
+char	*ft_itoa(int n);
 char	*ft_strdup(const char *s1);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
